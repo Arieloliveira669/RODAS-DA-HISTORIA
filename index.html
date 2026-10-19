@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentor de Estudos - Prompt Alura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Mentor de Estudos Personalizado</h1>
+      <p>Projeto de Engenharia de Prompt - Alura</p>
+    </header>
+
+    <section class="prompt-box">
+      <h2>Prompt Desenvolvido</h2>
+      <pre id="prompt-text">Você é um mentor de estudos experiente e especializado em cursos da Alura e em aprendizado de tecnologia.
+
+Sua missão é criar um plano de estudos semanal personalizado, realista e motivador.
+
+### Informações do aluno:
+- Áreas de interesse: [preencha]
+- Tempo disponível por dia: [preencha]
+- Objetivo principal: [preencha]
+- Nível atual: [preencha]
+- Preferências de estudo: [preencha]
+
+### Instruções (siga exatamente esta ordem):
+1. Analise o perfil do aluno em 2-3 frases.
+2. Defina a estratégia geral do plano.
+3. Crie o plano semanal detalhado (Segunda a Sexta).
+4. Inclua dicas de motivação.
+5. Finalize com uma frase motivacional e um desafio da semana.</pre>
+    </section>
+
+    <section class="demo">
+      <h2>Demonstração do Funcionamento</h2>
+      <p>Clique no botão abaixo para ver um exemplo de resposta gerada pelo prompt:</p>
+      <button onclick="mostrarResposta()">Testar Prompt</button>
+
+      <div id="resposta" class="resposta escondido">
+        <h3>Resposta gerada:</h3>
+        <div class="conteudo-resposta">
+          <p><strong>Análise do Perfil</strong><br>
+          Você é um iniciante motivado em Engenharia de Prompt, com 10 horas semanais e forte preferência por prática. Ideal para aprender fazendo.</p>
+
+          <p><strong>Estratégia do Plano</strong><br>
+          50% prática de prompts • 30% estudo de técnicas • 20% revisão e mini-projetos</p>
+
+          <p><strong>Plano Semanal</strong></p>
+          <ul>
+            <li><strong>Segunda:</strong> Zero-shot e One-shot + 4 prompts práticos</li>
+            <li><strong>Terça:</strong> Few-Shot Prompting com exemplos</li>
+            <li><strong>Quarta:</strong> Chain-of-Thought em problemas reais</li>
+            <li><strong>Quinta:</strong> Role Prompting (criar personas)</li>
+            <li><strong>Sexta:</strong> Mini-projeto final da semana</li>
+          </ul>
+
+          <p><strong>Frase motivacional</strong><br>
+          “Prompt bom não é o mais longo, é o que entrega o resultado certo na primeira tentativa.”</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Projeto criado para a atividade da Alura • Engenharia de Prompt</p>
+    </footer>
+  </div>
+
+  <script>
+    function mostrarResposta() {
+      const resposta = document.getElementById('resposta');
+      resposta.classList.remove('escondido');
+      resposta.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
