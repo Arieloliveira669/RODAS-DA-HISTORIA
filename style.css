@@ -165,7 +165,7 @@ body {
 }
 
 /* Velocidades diferentes */
-.car-1 {
+. .car-1 {
   font-size: 2.9rem;
   animation-duration: 12s;
   animation-delay: 0s;
@@ -202,6 +202,13 @@ body {
 
 /* Animação correta: da esquerda para a direita */
 @keyframes driveRight {
+  0% {
+    transform: translateX(-180px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 180px));
+  }
+} driveRight {
   0% {
     transform: translateX(-180px);
   }
