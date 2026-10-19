@@ -1,79 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentor de Estudos - Prompt Alura</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A Evolução dos Veículos</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1>Mentor de Estudos Personalizado</h1>
-      <p>Projeto de Engenharia de Prompt - Alura</p>
-    </header>
+<div id="progressBar"></div>
 
-    <section class="prompt-box">
-      <h2>Prompt Desenvolvido</h2>
-      <pre id="prompt-text">Você é um mentor de estudos experiente e especializado em cursos da Alura e em aprendizado de tecnologia.
 
-Sua missão é criar um plano de estudos semanal personalizado, realista e motivador.
-
-### Informações do aluno:
-- Áreas de interesse: [preencha]
-- Tempo disponível por dia: [preencha]
-- Objetivo principal: [preencha]
-- Nível atual: [preencha]
-- Preferências de estudo: [preencha]
-
-### Instruções (siga exatamente esta ordem):
-1. Analise o perfil do aluno em 2-3 frases.
-2. Defina a estratégia geral do plano.
-3. Crie o plano semanal detalhado (Segunda a Sexta).
-4. Inclua dicas de motivação.
-5. Finalize com uma frase motivacional e um desafio da semana.</pre>
-    </section>
-
-    <section class="demo">
-      <h2>Demonstração do Funcionamento</h2>
-      <p>Clique no botão abaixo para ver um exemplo de resposta gerada pelo prompt:</p>
-      <button onclick="mostrarResposta()">Testar Prompt</button>
-
-      <div id="resposta" class="resposta escondido">
-        <h3>Resposta gerada:</h3>
-        <div class="conteudo-resposta">
-          <p><strong>Análise do Perfil</strong><br>
-          Você é um iniciante motivado em Engenharia de Prompt, com 10 horas semanais e forte preferência por prática. Ideal para aprender fazendo.</p>
-
-          <p><strong>Estratégia do Plano</strong><br>
-          50% prática de prompts • 30% estudo de técnicas • 20% revisão e mini-projetos</p>
-
-          <p><strong>Plano Semanal</strong></p>
-          <ul>
-            <li><strong>Segunda:</strong> Zero-shot e One-shot + 4 prompts práticos</li>
-            <li><strong>Terça:</strong> Few-Shot Prompting com exemplos</li>
-            <li><strong>Quarta:</strong> Chain-of-Thought em problemas reais</li>
-            <li><strong>Quinta:</strong> Role Prompting (criar personas)</li>
-            <li><strong>Sexta:</strong> Mini-projeto final da semana</li>
-          </ul>
-
-          <p><strong>Frase motivacional</strong><br>
-          “Prompt bom não é o mais longo, é o que entrega o resultado certo na primeira tentativa.”</p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <p>Projeto criado para a atividade da Alura • Engenharia de Prompt</p>
-    </footer>
+<div class="hero">
+  <div class="wrap">
+    <h1>A Evolução dos Veículos</h1>
+    <p class="lead">Da carroça puxada a cavalos aos carros que quebram recordes de velocidade no deserto — uma jornada pela história de tudo que anda sobre rodas na terra firme.</p>
   </div>
+  <div class="road">
+    <svg class="car" viewBox="0 0 120 48" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 34 Q10 18 30 16 L78 16 Q94 16 100 30 L112 32 L112 38 L6 38 Z" fill="#e63946"/>
+      <path d="M32 18 L46 18 L50 28 L30 28 Z" fill="#1b1e26" opacity="0.8"/>
+      <path d="M52 18 L72 18 L76 28 L54 28 Z" fill="#1b1e26" opacity="0.8"/>
+      <g class="wheel"><circle cx="30" cy="38" r="8" fill="#14161c" stroke="#c9ccd1" stroke-width="2"/></g>
+      <g class="wheel"><circle cx="92" cy="38" r="8" fill="#14161c" stroke="#c9ccd1" stroke-width="2"/></g>
+    </svg>
+  </div>
+</div>
 
-  <script>
-    function mostrarResposta() {
-      const resposta = document.getElementById('resposta');
-      resposta.classList.remove('escondido');
-      resposta.scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
+<div class="wrap">
+
+<section>
+    <div><b>Fardier de Cugnot</b><p>Considerado um dos primeiros veículos automotores da história, movido a vapor, criado pelo engenheiro francês Nicolas-Joseph Cugnot para tracionar canhões militares.</p></div>
+  </div>
+  <div class="era">
+    <span class="yr">1885</span>
+    <div><b>Primeira motocicleta</b><p>Gottlieb Daimler cria o "Reitwagen", geralmente apontado como a primeira motocicleta do mundo, com motor a gasolina de um cilindro.</p></div>
+  </div>
+  <div class="era">
+    <span class="yr">1886</span>
+    <div><b>Benz Patent-Motorwagen</b><p>Karl Benz patenteia o que é amplamente considerado o primeiro automóvel prático movido a motor de combustão interna, marco inicial da indústria automobilística.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow"><span class="eyebrow-num">02</span></div>
+  <h2>A era de ouro dos automóveis</h2>
+  <p>O século XX transformou o carro de curiosidade mecânica em objeto de consumo de massa. A linha de montagem revolucionou a produção, e cada década trouxe uma nova forma de pensar o automóvel — da robustez funcional ao design aerodinâmico.</p>
+  <div class="era"><span class="yr">1908</span><div><b>Ford Model T</b><p>A produção em série na linha de montagem torna o automóvel acessível à classe média pela primeira vez, mudando para sempre a mobilidade urbana.</p></div></div>
+  <div class="era"><span class="yr">1930s</span><div><b>Era do design aerodinâmico</b><p>Carros como o Chrysler Airflow trazem carrocerias mais fluidas, influenciadas pelos estudos de aerodinâmica da aviação.</p></div></div>
+  <div class="era"><span class="yr">1950-60s</span><div><b>Os "muscle cars" e o boom pós-guerra</b><p>Motores V8 potentes, design ousado e cromados marcam a era dourada americana, enquanto a Europa populariza carros compactos como o Fusca e o Mini.</p></div></div>
+  <div class="era"><span class="yr">Hoje</span><div><b>Elétricos e autônomos</b><p>Motores elétricos, baterias e sistemas de assistência ao motorista redefinem novamente o que é um automóvel.</p></div></div>
+</section>
+
+<section>
+  <div class="eyebrow"><span class="eyebrow-num">03</span></div>
+  <h2>Motocicletas: liberdade sobre duas rodas</h2>
+  <p>Paralelamente ao automóvel, a motocicleta seguiu seu próprio caminho — mais leve, mais ágil, símbolo de liberdade e velocidade. De utilitárias de guerra a máquinas esportivas de alta performance, ela conquistou um lugar único na cultura mundial, de clubes de motociclistas às pistas de MotoGP.</p>
+  <div class="era"><span class="yr">1901</span><div><b>Harley-Davidson</b><p>Nasce uma das marcas mais icônicas do mundo, símbolo da motocicleta americana robusta e de grande cilindrada.</p></div></div>
+  <div class="era"><span class="yr">1949</span><div><b>Honda entra em cena</b><p>A Honda inicia sua trajetória que a tornaria, décadas depois, a maior fabricante de motocicletas do planeta.</p></div></div>
+</section>
+
+<section>
+  <div class="eyebrow"><span class="eyebrow-num">04</span></div>
+  <h2>Veículos militares: tecnologia forjada em conflito</h2>
+  <p>A guerra sempre acelerou a inovação automotiva. Dos primeiros carros blindados da Primeira Guerra Mundial aos tanques pesados e veículos táticos modernos, os conflitos globais empurraram engenheiros a criar máquinas cada vez mais resistentes, rápidas e versáteis — muitas tecnologias depois migraram para o uso civil.</p>
+  <div class="track-strip"></div>
+    <div class="speed-lines"><div></div><div></div><div></div></div>
+    <h3>Bonneville Speed Week</h3>
+    <p>Desde 1949, pilotos e engenheiros se reúnem anualmente no salar para tentar bater recordes de velocidade em terra, em categorias que vão de carros modificados a projéteis movidos a turbina.</p>
+  </div>
+  <div class="era"><span class="yr">1964</span><div><b>Spirit of America</b><p>Movido a motor a jato, o veículo de Craig Breedlove ultrapassou a marca de 600 km/h no salar de Bonneville, redefinindo o que era considerado possível em terra firme.</p></div></div>
+  <div class="era"><span class="yr">1997</span><div><b>ThrustSSC</b><p>O primeiro veículo terrestre a romper oficialmente a barreira do som, atingindo mais de 1.220 km/h no deserto do Black Rock, nos EUA.</p></div></div>
+</section>
+
+<section style="border-bottom:none;">
+  <div class="eyebrow"><span class="eyebrow-num">07</span></div>
+  <h2>Linha do tempo resumida</h2>
+  <div class="timeline">
+    <div class="tl-item"><b>1769</b><p>Fardier de Cugnot — primeiro veículo automotor a vapor.</p></div>
+    <div class="tl-item"><b>1885–1886</b><p>Primeira motocicleta e primeiro automóvel a motor de combustão.</p></div>
+    <div class="tl-item"><b>1908</b><p>Ford Model T populariza o automóvel com a linha de montagem.</p></div>
+    <div class="tl-item"><b>1916–1942</b><p>Tanques e Jeeps militares revolucionam a engenharia em tempos de guerra.</p></div>
+    <div class="tl-item"><b>1950</b><p>Início da Fórmula 1 como maior categoria do automobilismo mundial.</p></div>
+    <div class="tl-item"><b>1964–1997</b><p>Recordes de velocidade em terra batidos em Bonneville e Black Rock.</p></div>
+    <div class="tl-item"><b>Hoje</b><p>Motores elétricos e direção autônoma abrem um novo capítulo da história.</p></div>
+  </div>
+</section>
+
+</div>
+
+<footer>Blog feito para fins educacionais • A evolução continua.</footer>
+
+
+<button id="toTop" aria-label="Voltar ao topo">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<script src="script.js"></script>
 </body>
 </html>
