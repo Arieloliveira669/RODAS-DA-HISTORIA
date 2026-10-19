@@ -143,7 +143,7 @@ body {
   font-size: 0.85rem;
 }
 
-/* Animação de veículos no hero - CORRIGIDA E MELHORADA */
+ /* Animação de veículos no hero - CORRIGIDA (esquerda → direita) */
 .vehicle-track {
   position: absolute;
   bottom: 50px;
@@ -157,49 +157,59 @@ body {
   position: absolute;
   font-size: 2.6rem;
   bottom: 10px;
-  filter: drop-shadow(0 4px 12px rgba(249, 115, 22, 0.45));
-  animation: driveForward linear infinite;
+  filter: drop-shadow(0 4px 12px rgba(249, 115, 22, 0.5));
+  animation-name: driveRight;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   will-change: transform;
 }
 
-/* Velocidades e delays diferentes */
+/* Velocidades diferentes */
 .car-1 {
   font-size: 2.9rem;
-  animation-duration: 11s;
+  animation-duration: 12s;
   animation-delay: 0s;
   bottom: 8px;
 }
 
 .car-2 {
   font-size: 2.3rem;
-  animation-duration: 15s;
-  animation-delay: -4s;
+  animation-duration: 16s;
+  animation-delay: -3s;
   bottom: 22px;
 }
 
 .car-3 {
   font-size: 2.5rem;
-  animation-duration: 9.5s;
-  animation-delay: -7s;
+  animation-duration: 10s;
+  animation-delay: -6s;
   bottom: 5px;
 }
 
 .car-4 {
   font-size: 2.7rem;
-  animation-duration: 18s;
-  animation-delay: -2s;
+  animation-duration: 19s;
+  animation-delay: -1s;
   bottom: 18px;
 }
 
 .car-5 {
   font-size: 2.4rem;
-  animation-duration: 13s;
-  animation-delay: -9s;
+  animation-duration: 14s;
+  animation-delay: -8s;
   bottom: 12px;
 }
 
-/* Animação CORRETA (esquerda → direita) */
-@keyframes driveForward {
+/* Animação correta: da esquerda para a direita */
+@keyframes driveRight {
+  0% {
+    transform: translateX(-180px);
+  }
+  100% {
+    transform: translateX(calc(100vw + 180px));
+  }
+}
+. driveForward {
   0% {
     transform: translateX(-150px);
   }
